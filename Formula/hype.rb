@@ -1,13 +1,13 @@
 class Hype < Formula
   desc "CLI for Hype Doc: log and track your wins from the terminal"
   homepage "https://github.com/myhypedoc/cli"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/myhypedoc/cli/releases/download/v#{version}/hype-darwin-arm64"
-      sha256 "66af61b92f1c216438de67f4f2169184e2b4566f8e6282da98b0795482286423"
+      sha256 "afb13e1756836647c5014c737296fb85bca3287f8affac327479ed05dd80468a"
     else
       url "https://github.com/myhypedoc/cli/releases/download/v#{version}/hype-darwin-x64"
       sha256 ""
@@ -17,10 +17,10 @@ class Hype < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/myhypedoc/cli/releases/download/v#{version}/hype-linux-arm64"
-      sha256 "13dff3a1c0cd898b388ed0e24cf620fa8e1a52f86b87bf0e48bb81cc5dd63030"
+      sha256 "105f014ca28f94f58cd6ea1ec2d783aedcbe873486e2a8b8ffb9dd5c7d20984f"
     else
       url "https://github.com/myhypedoc/cli/releases/download/v#{version}/hype-linux-x64"
-      sha256 "d5a3324f45923eb0c276faffb7edad947eee749699d935fd667347647ef9d893"
+      sha256 "37aa3c4a6cb95b831c719fa1769bb06cfbba3d3d67de5b79abb9e07dc922a138"
     end
   end
 
